@@ -11,10 +11,10 @@ kotlin {
 }
 
 android {
-    namespace = "com.example.symptomtracker.android"
+    namespace = "com.example.recoverylogger"
     compileSdk = 36
     defaultConfig {
-        applicationId = "com.example.symptomtracker"
+        applicationId = "com.example.recoverylooger"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

@@ -70,7 +70,7 @@ kotlin {
 }
 
 android {
-  namespace = "com.example.symptomtracker"
+  namespace = "com.example.recoverylogger"
   compileSdk = 36
   defaultConfig {
     minSdk = 24
@@ -113,7 +113,7 @@ android {
 sqldelight {
   databases {
     create("AppDatabase") {
-      packageName.set("com.example.symptomtracker.db")
+      packageName.set("com.example.recoverylogger.db")
     }
   }
 }

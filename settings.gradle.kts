@@ -18,6 +18,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "SymptomTracker"
+rootProject.name = "recoverylogger"
 include(":androidApp")
 include(":shared")

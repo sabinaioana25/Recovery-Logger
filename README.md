@@ -1,28 +1,31 @@
-# Symptom Tracker
+# Recovery Logger
 
 *Work in progress*
-A Kotlin Multiplatform Mobile application for tracking symptoms and notes, built with modern Android and iOS development practices.
+Post-surgery recovery tracking made simple. Log daily symptoms, track trends, and share outcomes with your healthcare provider.
 
 ## Features
 
-- **Symptom Tracking**: Record symptoms with severity ratings (1-10 scale) and optional notes
-- **Note Management**: Create and manage detailed notes for health observations
+- **Daily Recovery Check-ins**: Answer 8 symptom-focused questions about your recovery (heartburn, swallowing, bloating, diet, etc.)
+- **Structured Data**: Responses stored securely in the cloud, ready to export and share with your doctor
+- **Offline-First**: Works without internet; syncs when connected
 - **Cross-Platform**: Native Android and iOS apps with shared business logic
-- **Local Storage**: SQLDelight database for offline-first data persistence
-- **Firebase Integration**: Cloud sync for Android users
 
 ## Technology Stack
 
-- **Kotlin Multiplatform Mobile (KMM)**: Shared business logic across platforms
-- **Compose Multiplatform**: Modern UI framework
-- **SQLDelight**: Type-safe SQL database library
-- **Firebase**: Cloud services for Android
-- **Clean Architecture**: Domain-driven design with repository pattern
+Phase 1 targets Android with:
+- Post-fundoplication recovery tracking
+- Firebase cloud storage
+- Daily questionnaire logging
+- Secure user authentication
+
+iOS and multi-intervention support coming in Phase 2+.
 
 ## Architecture
 
-The app follows Clean Architecture principles with:
-- **Domain Layer**: Core business logic and entities
-- **Repository Pattern**: Data abstraction layer
-- **Use Cases**: Application-specific business rules
-- **MVVM**: Presentation layer with ViewModels
+- **Kotlin Multiplatform Mobile (KMP)**: Shared domain logic, Android-focused implementation
+- **Jetpack Compose**: Modern Android UI
+- **Firebase Auth & Firestore**: User authentication and cloud data sync
+- **Clean Architecture**: Domain → Presentation → Data layers with repository pattern
+- **Hilt**: Dependency injection
+
+![img.png](img.png)
